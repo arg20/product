@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../homepage.dart';
+
 class CustomNavbar extends StatelessWidget {
   const CustomNavbar({
     Key? key,
@@ -15,7 +17,11 @@ class CustomNavbar extends StatelessWidget {
         child: Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
           IconButton(
               onPressed: () {
-                Navigator.pushNamed(context, '/');
+                Navigator.push(context,MaterialPageRoute(
+                  builder: (context) {
+                    return HomePage();
+                  },
+                ));
               },
               icon: const Icon(
                 Icons.home,

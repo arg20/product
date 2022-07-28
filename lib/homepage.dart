@@ -1,6 +1,7 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:product_pages/model/category_model.dart';
+import 'package:product_pages/productListPage.dart';
 import 'package:product_pages/widgets/appBar.dart';
 import 'package:product_pages/widgets/carouselcard.dart';
 import 'package:product_pages/widgets/custom_navbar.dart';
@@ -56,17 +57,41 @@ class HomePage extends StatelessWidget {
                   child: Column(
                     children: [
                       ReusableCard(
-                          imgName:
-                              'assets/img_categorybutton/Electronics_img1.PNG',
-                          categoryName: 'Electronics'),
+                        imgName:
+                            'assets/img_categorybutton/Electronics_img1.PNG',
+                        categoryName: 'Electronics',
+                        onPress: () => Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) =>
+                                ProductListPage(categoryName: "Electronics"),
+                          ),
+                        ),
+                      ),
                       const SizedBox(height: 2),
                       ReusableCard(
-                          imgName: 'assets/img_categorybutton/fashion_img2.PNG',
-                          categoryName: 'Books'),
+                        imgName: 'assets/img_categorybutton/fashion_img2.PNG',
+                        categoryName: 'Fashion',
+                        onPress: () => Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) =>
+                                ProductListPage(categoryName: 'Fashion'),
+                          ),
+                        ),
+                      ),
                       const SizedBox(height: 2),
                       ReusableCard(
-                          imgName: 'assets/img_categorybutton/grocery_img5.PNG',
-                          categoryName: 'Grocery'),
+                        imgName: 'assets/img_categorybutton/books_img3.PNG',
+                        categoryName: 'Books',
+                        onPress: () => Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) =>
+                                ProductListPage(categoryName: "Books"),
+                          ),
+                        ),
+                      ),
                       const SizedBox(height: 2),
                     ],
                   ),
@@ -75,17 +100,40 @@ class HomePage extends StatelessWidget {
                   child: Column(
                     children: [
                       ReusableCard(
-                          imgName: 'assets/img_categorybutton/fashion_img2.PNG',
-                          categoryName: 'Fashion'),
+                        imgName: 'assets/img_categorybutton/sports_img4.PNG',
+                        categoryName: 'Sports',
+                        onPress: () => Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) =>
+                                ProductListPage(categoryName: "Sports"),
+                          ),
+                        ),
+                      ),
                       const SizedBox(height: 2),
                       ReusableCard(
-                          imgName: 'assets/img_categorybutton/sports_img4.PNG',
-                          categoryName: 'Sports'),
+                        imgName: 'assets/img_categorybutton/grocery_img5.PNG',
+                        categoryName: 'Grocery',
+                        onPress: () => Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) =>
+                                ProductListPage(categoryName: "Grocery"),
+                          ),
+                        ),
+                      ),
                       const SizedBox(height: 2),
                       ReusableCard(
-                          imgName:
-                              'assets/img_categorybutton/medicine_img6.PNG',
-                          categoryName: 'Medicine'),
+                        imgName: 'assets/img_categorybutton/medicine_img6.PNG',
+                        categoryName: 'Medicine',
+                        onPress: () => Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) =>
+                                ProductListPage(categoryName: "Medicine"),
+                          ),
+                        ),
+                      ),
                       const SizedBox(height: 2),
                     ],
                   ),
