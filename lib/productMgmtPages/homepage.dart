@@ -1,7 +1,7 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:product_pages/model/category_model.dart';
-import 'package:product_pages/productListPage.dart';
+import 'package:product_pages/productMgmtPages/productListPage.dart';
 import 'package:product_pages/widgets/appBar.dart';
 import 'package:product_pages/widgets/carouselcard.dart';
 import 'package:product_pages/widgets/custom_navbar.dart';

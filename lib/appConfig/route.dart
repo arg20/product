@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:product_pages/homepage.dart';
-import 'package:product_pages/productListPage.dart';
+import 'package:product_pages/productMgmtPages/homepage.dart';
+import 'package:product_pages/productMgmtPages/productListPage.dart';
 
 void main() {
   runApp(
